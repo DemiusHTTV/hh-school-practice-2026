@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+          "label": "Build LESS",
+          "type": "shell",
+          "command": "node_modules/.bin/lessc styles/styles.less styles/styles-task.css",
+          "group": {
+            "kind": "build",
+            "isDefault": true
+          },
+          "presentation": {
+            "reveal": "always",
+            "panel": "shared"
+          },
+          "problemMatcher": []
+        }
+        ,
+        {
+            "label": "Watch LESS",
+            "type": "shell",
+            "command": "npx onchange 'styles/**/*.less' -- node_modules/.bin/lessc styles/styles.less styles/styles-task.css",
+            "isBackground": true,
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

@@ -26,19 +26,19 @@
 }
 
 .header__button_search {
-    background-image: url(../../assets/search.svg);
+    background-image: url(../assets/search.svg);
 }
 .header__button_profile {
-    background-image: url(../../assets/profile.svg);
+    background-image: url(../assets/profile.svg);
 }
 .header__button_menu {
-    background-image: url(../../assets/menu.svg);
+    background-image: url(../assets/menu.svg);
 }
 
 @items: search, profile, menu;
 
 each(@items, {
     .header__button_@{value} {
-       background-image: url('../../assets/@{value}.svg');
+       background-image: url('../assets/@{value}.svg');
     }
 });

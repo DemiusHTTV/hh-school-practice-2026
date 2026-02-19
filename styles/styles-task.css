@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Novelist";
+  src: url(../fonts/Novelist.otf);
+  font-weight: normal;
+}
+:root {
+  --color-dark: #212122;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 14px/1.2 Arial, sans-serif;
+  color: #333;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+}
+h2 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+h4 {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.content {
+  padding: 0 16px;
+}
+.header {
+  display: flex;
+  background: #212122;
+  height: 60px;
+  padding: 0 16px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.header__button {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 0;
+  margin-right: 20px;
+}
+.header__button:last-of-type {
+  margin-right: 0;
+}
+.header__button_search {
+  background-image: url(../assets/search.svg);
+}
+.header__button_profile {
+  background-image: url(../assets/profile.svg);
+}
+.header__button_menu {
+  background-image: url(../assets/menu.svg);
+}
+.header__button_search {
+  background-image: url('../assets/search.svg');
+}
+.header__button_profile {
+  background-image: url('../assets/profile.svg');
+}
+.header__button_menu {
+  background-image: url('../assets/menu.svg');
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 20px 10px;
+}
+.card {
+  text-align: center;
+  position: relative;
+}
+.card__img {
+  width: 100%;
+}
+.card__price_old {
+  position: relative;
+  color: #AEB5B9;
+}
+.card__price_old:after {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: #AEB5B9;
+}
+.card__sale {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url('../assets/sale.png');
+  background-size: cover;
+}
