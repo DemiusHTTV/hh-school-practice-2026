@@ -52,6 +52,10 @@ h4 {
   padding: 0 16px;
 }
 
+p {
+  color: #999;
+}
+
 .header {
   background: #212122;
   width: 100%;
@@ -272,4 +276,127 @@ h4 {
   background: #eee;
 }
 
-/*# sourceMappingURL=index.d2908973.css.map */
+.services {
+  background-color: #f2f2f2;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 24px 16px;
+  display: grid;
+}
+
+.services__card {
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.services__card_img {
+  width: 40px;
+  height: 40px;
+}
+
+.services__card_text {
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media screen and (width >= 768px) {
+  .services {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 40px;
+  }
+}
+
+.footer__down {
+  background-color: #212122;
+  height: 300px;
+  padding: 16px 8px;
+}
+
+.contacts__cards {
+  gap: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.contacts__cards div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 36px;
+  height: 36px;
+}
+
+.contact__card_facebook {
+  background-image: url("facebook.ea338ab7.svg");
+}
+
+.contact__card_twitter {
+  background-image: url("twitter.02d5a07e.svg");
+}
+
+.contact__card_vk {
+  background-image: url("vk.f70c6ae3.svg");
+}
+
+.contact__card_instagram {
+  background-image: url("instagram.6fb4e9cf.svg");
+}
+
+.footer__stores {
+  gap: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.footer__stores a {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 170px;
+  height: 50px;
+  display: block;
+}
+
+.store__appstore {
+  background-image: url("appstore.bd26a0f9.svg");
+}
+
+.store__googleplay {
+  background-image: url("googleplay.afffc6ab.svg");
+}
+
+.footer__logo {
+  display: none;
+}
+
+@media screen and (width >= 1200px) {
+  .footer__down_refs {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .footer__logo {
+    background-image: url("hh_gray.0dea22ae.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .footer__down_refs {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=hh-school-practice-2026.d2908973.css.map */
